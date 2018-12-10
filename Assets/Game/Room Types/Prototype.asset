@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17b6b193d120e44d91967ceb9286572, type: 3}
+  m_Name: Prototype
+  m_EditorClassIdentifier: 
+  spawnList:
+  - angleIteration: 6
+    spawnLimits: {x: 16, y: 28}
+    spawnable: {fileID: 114750241479789810, guid: 008f07760ffac8a46b4a4a15a90d461e,
+      type: 2}
+  - angleIteration: 0
+    spawnLimits: {x: 15, y: 27}
+    spawnable: {fileID: 114206721295833996, guid: 9d7ac1dd423cd0742a0a81ac1af77084,
+      type: 2}
+  - angleIteration: 0
+    spawnLimits: {x: 0, y: 4}
+    spawnable: {fileID: 114485403879171414, guid: 08e1e35595818ca4b9506535ceba87cd,
+      type: 2}
+  - angleIteration: 0
+    spawnLimits: {x: 0, y: 2}
+    spawnable: {fileID: 114873089754301744, guid: c2e62295f392f7a41b7529569bcc6413,
+      type: 2}
+  - angleIteration: 0
+    spawnLimits: {x: 14, y: 24}
+    spawnable: {fileID: 114619965245309350, guid: dd4cb8fe76896604699b7a351fd750e9,
+      type: 2}
+  - angleIteration: 0
+    spawnLimits: {x: 13, y: 20}
+    spawnable: {fileID: 114802335763766650, guid: 9ff7c418a5b0db14db2b26a105ee5738,
+      type: 2}
+  - angleIteration: 0
+    spawnLimits: {x: 8, y: 16}
+    spawnable: {fileID: 114432324860722988, guid: 61d02999f997c4642b30c6e354ebd2e1,
+      type: 2}
+  roomSets:
+  - name: Needed Room set
+    Floors: []
+    Corridors_EastWest: []
+    Corridors_NorthSouth: []
+    Corners_NorthEast: []
+    Corners_SouthEast: []
+    Corners_NorthWest: []
+    Corners_SouthWest: []
+    Walls_East: []
+    Walls_West: []
+    Walls_North: []
+    Walls_South: []
+    Doors_North: []
+    Doors_South: []
+    Doors_East: []
+    Doors_West: []
+    extraSpawnList: []
+  doorLimits: {x: 1, y: 4}
+  originBias: 0.5
+  tileLimits: {x: 50, y: 150}
+  sizeLimits: {x: 10, y: 30}
+  roomClusters: 10

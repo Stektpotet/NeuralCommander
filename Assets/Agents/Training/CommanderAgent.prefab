@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1773403762212954}
+  m_IsPrefabAsset: 1
+--- !u!1 &1773403762212954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4286389511733228}
+  - component: {fileID: 114570578883086596}
+  - component: {fileID: 114335176439635052}
+  - component: {fileID: 114058215603842768}
+  m_Layer: 0
+  m_Name: CommanderAgent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4286389511733228
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773403762212954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114058215603842768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773403762212954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee0286118737874e9ad96901cc1d855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squadRadius: 15
+--- !u!114 &114335176439635052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773403762212954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d769a83132d7b9247b68205d72d18d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRoomSize: 40
+  levels:
+  - {fileID: 114241215649306556, guid: 7e87bb6b6faf88947b9007b4c8428155, type: 2}
+  - {fileID: 114934647675236822, guid: 389898a434bb2fe43af73119ebc2ffd7, type: 2}
+  - {fileID: 114330561560290674, guid: a00cd6f26bf9ac14baf3339b0d202aea, type: 2}
+  - {fileID: 114989566137451278, guid: 1ac016dc7043b5c489411bd0942ef09f, type: 2}
+  - {fileID: 114329529509355742, guid: b2bb204095786b649a1c7788d1cd570d, type: 2}
+  - {fileID: 114588132523437798, guid: cecdd828f25c66341b76f9eb0fa6c333, type: 2}
+  - {fileID: 114290563931656520, guid: df3c461e4ca15514eb53cdd0f53163b8, type: 2}
+  - {fileID: 114658388171128536, guid: b9d971b3f3c3e364da8d8daef4a38bd9, type: 2}
+  - {fileID: 114343855144644348, guid: de412bb8a6608bd4cb89a71bfb99257a, type: 2}
+  - {fileID: 114845684524816982, guid: 09e2fe7a5a1e1f44b935fa1593bc6bb1, type: 2}
+  - {fileID: 114923072802560320, guid: 8f85a737e9eef7c44871cea9478af8b1, type: 2}
+  - {fileID: 114055454883316496, guid: 053930b2ae672094cb62d975a3b288cb, type: 2}
+  - {fileID: 114898969874156084, guid: ce92f41ab3f9b194c863586ab93f42df, type: 2}
+  - {fileID: 114701805418743050, guid: 4290af39c00ad614ca0b46a1b54327ec, type: 2}
+  - {fileID: 114113193199606372, guid: 05458da248ed5ab4691ab22f64e7d8f4, type: 2}
+  - {fileID: 114038286460937002, guid: f8be4a750113e9244990366cdec0801b, type: 2}
+  - {fileID: 114263812285537004, guid: 4a0391479bea3ee438f3321edd4dcdb7, type: 2}
+  - {fileID: 114078179695666178, guid: a9fd6d8a076e9fa47829cea5e4f55e43, type: 2}
+  - {fileID: 114059103266324778, guid: 146a37bc93cd729409e17ddc71e6b1bb, type: 2}
+  - {fileID: 114559792188802332, guid: 8370027b236854f4e9fcb9723fe9074f, type: 2}
+  - {fileID: 114919682413322056, guid: b2d1eb16e0594074eb657c127848a406, type: 2}
+  - {fileID: 114768863955470436, guid: 0cd59c94f3a9a644c94852e9be027194, type: 2}
+  roomTypes:
+  - {fileID: 11400000, guid: a90a1b77ab92c4a488c94b653e2470a4, type: 2}
+  - {fileID: 11400000, guid: 47dc53be84d1f5344a9ab52f240a6b31, type: 2}
+--- !u!114 &114570578883086596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773403762212954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee69defdeeef0c47b07ce0302811e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brain: {fileID: 0}
+  agentParameters:
+    agentCameras: []
+    maxStep: 0
+    resetOnDone: 1
+    onDemandDecision: 1
+    numberOfActionsBetweenDecisions: 1
+  squad:
+    squadSensor: {fileID: 114058215603842768}
+    units:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    playerWithinSquadRange: 0
+    physicalObjectsWithinRange: []
+    weaponsWithinRange: []
+    currentRoom: {fileID: 0}
+  unitsInSquad: {x: 3, y: 5}
+  squadColor:
+    serializedVersion: 2
+    rgba: 0
+  unitPrefabs:
+  - {fileID: 1883735243066714, guid: ed8c18cb6965c7e459da41fa5ebee64d, type: 2}
+  - {fileID: 1635528961917204, guid: 5ecf8575767f5d74aadf7aa8d7186a69, type: 2}
+  simulatedPlayerPrefab: {fileID: 1290391855794830, guid: 6a0372d86162cfd47a046053fe235c06,
+    type: 2}
+  episodesForNewRoom: 200
+  episodesForNewSpawnables: 100
+  episodesForNewSquad: 20

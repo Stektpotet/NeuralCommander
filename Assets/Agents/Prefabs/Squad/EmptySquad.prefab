@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1157390530001634}
+  m_IsPrefabAsset: 1
+--- !u!1 &1157390530001634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4739813909754826}
+  - component: {fileID: 114259373795294806}
+  - component: {fileID: 114195924949013554}
+  - component: {fileID: 114986290805489596}
+  m_Layer: 0
+  m_Name: EmptySquad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4739813909754826
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157390530001634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.032297, y: 0.0009775171, z: 44.538795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114195924949013554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157390530001634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee0286118737874e9ad96901cc1d855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squadRadius: 7
+--- !u!114 &114259373795294806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157390530001634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f281d35776f9ce498240a48f9889e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brain: {fileID: 0}
+  agentParameters:
+    agentCameras: []
+    maxStep: 0
+    resetOnDone: 1
+    onDemandDecision: 0
+    numberOfActionsBetweenDecisions: 1
+  squad:
+    squadSensor: {fileID: 114195924949013554}
+    units: []
+    playerWithinSquadRange: 0
+    physicalObjectsWithinRange: []
+    weaponsWithinRange: []
+    currentRoom: {fileID: 0}
+  unitsInSquad: {x: 2, y: 4}
+--- !u!114 &114986290805489596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157390530001634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab092b0e2c919343a86a6c0dd2dcdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  byWallProbability: 0
+  notWallProbability: 0
+  spawnByDoorProbability: 0
+  spawnOnTop: 0
+  angleMaxOffset: 0
+  allowOtherOnTop: 0
+  relativeSpawnList: []
+  neededSpawnSpace:
+    m_Center: {x: 24.032297, y: -Infinity, z: 44.538795}
+    m_Extent: {x: 0, y: 0, z: 0}
