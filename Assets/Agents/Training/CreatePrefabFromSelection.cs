@@ -1,8 +1,8 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 using System.Collections;
 using System.IO;
-
 class CreatePrefabFromSelection
 {
     /// <summary>
@@ -58,3 +58,4 @@ class CreatePrefabFromSelection
     [MenuItem("GameObject/Create Prefab From Selected", true)]
     static bool ValidateCreatePrefab() => Selection.activeGameObject != null;
 }
+#endif

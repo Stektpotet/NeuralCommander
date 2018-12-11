@@ -291,8 +291,8 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 65cf279c27a8f3b4492c0da4e1694891, type: 2}
-  - {fileID: 2100000, guid: 35ff33bcba1ec0d4d884c1c7113e6094, type: 2}
-  - {fileID: 2100000, guid: cf21ca9d4316d6548b3d2399abfed451, type: 2}
+  - {fileID: 2100006, guid: f1da6490a0b2a644ba60e8254b5f6298, type: 3}
+  - {fileID: 2100000, guid: 39d452f023cfdfd4b8c4514da6dd9270, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -588,6 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2497bc4c3a6e4d49adac26e9bc2430c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
   indestrucable: 0
   durability: 100
   density: 0.4
@@ -620,6 +621,11 @@ MonoBehaviour:
     m_TypeName: PhysicalObject+HandEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onDrop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: PhysicalObject+HandEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onPlayerDrop:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: PhysicalObject+HandEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,

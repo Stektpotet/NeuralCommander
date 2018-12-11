@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Agents/Training/BootCamp.unity
+    guid: a47a32c5bd6ac51458084fcfe6f3c329
+  m_configObjects: {}

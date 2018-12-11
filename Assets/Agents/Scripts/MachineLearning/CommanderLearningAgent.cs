@@ -36,20 +36,15 @@ public class CommanderLearningAgent : CommanderAgent
     System.Random random;
     TrainingRoom trainingRoom;
     UnityEngine.AI.NavMeshDataInstance navMeshHandle;
-
-    [ContextMenu("Test NewRoom()")]
+    
     private void NewRoom()
     {
-#if UNITY_EDITOR
         random = new System.Random(Time.realtimeSinceStartup.GetHashCode());
         if (trainingRoom != null)
         {
-            DestroyImmediate(trainingRoom.gameObject);
-#else
             Destroy(trainingRoom.gameObject);
-#endif
         }
-        if (setup == null) setup = GetComponent<BootCampSetup>();
+        if (setup == null) { setup = GetComponent<BootCampSetup>(); }
         trainingRoom = setup.SetupEnvironment(random);
 
         var navMeshSurface = transform.parent.GetComponent<UnityEngine.AI.NavMeshSurface>();
@@ -62,18 +57,13 @@ public class CommanderLearningAgent : CommanderAgent
         NewSimulatedPlayer();
         NewSquad();
     }
-    [ContextMenu("Test NewSpawnables()")]
     private void NewSpawnables()
     {
         if (trainingRoom != null)
         {
             foreach (Transform child in trainingRoom.transform)
             {
-#if UNITY_EDITOR
-                DestroyImmediate(child.gameObject);
-#else
                 Destroy(child.gameObject);
-#endif
             }
         }
         setup.SpawnSpawnables(trainingRoom, random);
@@ -87,8 +77,7 @@ public class CommanderLearningAgent : CommanderAgent
         squad.currentRoom = trainingRoom;
         SquadGenerator.AttachNewSquadTo(this, unitPrefabs, tiles, unitsInSquad, random, trainingRoom, offset, instantiatedPlayer);
     }
-
-    [ContextMenu("Test NewSquadUnits()")]
+    
     private void NewSquadUnits()
     {
         //NOTE: it might be useful to just fill in empty positions of the squad instead.

@@ -1,4 +1,4 @@
-﻿#if UNITY_EDITOR
+﻿
 using UnityEngine;
 public class MinMaxSliderAttribute : PropertyAttribute
 {
@@ -16,4 +16,3 @@ public class MinMaxSliderAttribute : PropertyAttribute
         this.max = max;
     }
 }
-#endif
